@@ -242,7 +242,6 @@ xml2js.parseStringPromise(resp.body.toString(), {mergeAttrs: true})
                         format: "iso4217-currency-code",
                         enum: [...new Set(result.map(currency => currency.code))],
                         "x-go-type": "github.com/mikekonan/go-currencies/Code"
-
                     },
                     CurrencyName: {
                         example: "Euro",
